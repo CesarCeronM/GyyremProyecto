@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C1C3C6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyyrem.gui.FXMLregistrarMiembroController">
+   <children>
+      <Label fx:id="lblTitulo" prefHeight="21.0" prefWidth="600.0" style="-fx-border-color: black; -fx-background-color: #32476E;" text="          RegistrarMiembro" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegistrarMiembro" layoutX="179.0" layoutY="37.0" text="Registrar miembro">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="142.0" layoutY="84.0" text="Nombre:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="226.0" layoutY="80.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtApellidoPaterno" layoutX="226.0" layoutY="121.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtApellidoMaterno" layoutX="226.0" layoutY="158.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label fx:id="lblFechaNacimiento" layoutX="112.0" layoutY="204.0" text="Fecha Nacimiento:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTelefono" layoutX="141.0" layoutY="246.0" text="Telefono:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblApellidoMaterno" layoutX="114.0" layoutY="161.0" text="Apellido materno:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblApellidoPaterno" layoutX="116.0" layoutY="124.0" text="Apellido paterno:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistrar" layoutX="478.0" layoutY="102.0" mnemonicParsing="false" onAction="#validarCampos" style="-fx-background-color: #32476E;" text="Registrar" textFill="#f5f5f5" />
+      <Button fx:id="btnCancelar" layoutX="479.0" layoutY="144.0" mnemonicParsing="false" onAction="#regresarVentanaMenu" style="-fx-background-color: #32476E;" text="Cancelar" textFill="WHITE" />
+      <Label fx:id="lblCorreo" layoutX="147.0" layoutY="286.0" text="Correo:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTelefono" layoutX="226.0" layoutY="243.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtCorreo" layoutX="226.0" layoutY="283.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label fx:id="lblConstraseña" layoutX="133.0" layoutY="328.0" text="Contraseña:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpFechaNacimiento" layoutX="226.0" layoutY="202.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label fx:id="lblMembresia" layoutX="133.0" layoutY="366.0" text="Membresia:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cmbMembresia" layoutX="226.0" layoutY="364.0" prefHeight="25.0" prefWidth="200.0" />
+      <PasswordField fx:id="txtContraseña" layoutX="226.0" layoutY="326.0" prefHeight="25.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C1C3C6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyyrem.gui.FXMLverPagosPendientesController">
+   <children>
+      <Label fx:id="lblTitulo" layoutY="-1.0" prefHeight="21.0" prefWidth="600.0" style="-fx-border-color: black; -fx-background-color: #32476E;" text="          VerPagosPendientes" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPagos" layoutX="201.0" layoutY="30.0" text="Pagos pendientes">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblClases" layoutX="17.0" layoutY="84.0" prefHeight="190.0" prefWidth="431.0">
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="146.0" text="Nombre" />
+            <TableColumn fx:id="colCostoClase" prefWidth="122.0" text="Costo" />
+            <TableColumn fx:id="colHorario" minWidth="0.0" prefWidth="162.0" text="Horario" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblMembresia" layoutX="17.0" layoutY="292.0" prefHeight="68.0" prefWidth="431.0">
+         <columns>
+            <TableColumn fx:id="colTipoMembresia" prefWidth="145.0" text="Tipo de membresia" />
+            <TableColumn fx:id="colCostoMembresia" prefWidth="135.0" text="Costo" />
+            <TableColumn fx:id="colFechaDeFin" minWidth="0.0" prefWidth="150.0" text="Fecha de fin" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnPagar" layoutX="508.0" layoutY="84.0" mnemonicParsing="false" onAction="#pagar" style="-fx-background-color: #32476E;" text="Pagar" textFill="WHITE" />
+      <Button fx:id="btnRegresar" layoutX="500.0" layoutY="128.0" mnemonicParsing="false" onAction="#regresarVentanaMenu" style="-fx-background-color: #32476E;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C1C3C6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gyyrem.gui.FXMLmodificarClaseController">
+   <children>
+      <Label fx:id="lblTitulo" prefHeight="21.0" prefWidth="600.0" style="-fx-border-color: black; -fx-background-color: #32476E;" text="          ModificarClase" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblModificarClase" layoutX="215.0" layoutY="51.0" text="Modificar clase">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="137.0" layoutY="107.0" text="Nombre:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="226.0" layoutY="104.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtHorario" layoutX="226.0" layoutY="145.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtCosto" layoutX="226.0" layoutY="307.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtCupo" layoutX="226.0" layoutY="264.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label fx:id="lblCosto" layoutX="145.0" layoutY="310.0" text="Costo:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProfesor" layoutX="137.0" layoutY="351.0" text="Profesor:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCupo" layoutX="145.0" layoutY="267.0" text="Cupo:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHorario" layoutX="146.0" layoutY="148.0" text="Hora:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cmbProfesor" layoutX="226.0" layoutY="348.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button fx:id="btnModificar" layoutX="477.0" layoutY="116.0" mnemonicParsing="false" onAction="#validarCampos" style="-fx-background-color: #32476E;" text="Modificar" textFill="WHITE" />
+      <Button fx:id="btnCancelar" layoutX="479.0" layoutY="157.0" mnemonicParsing="false" onAction="#regresarVentanaMenu" style="-fx-background-color: #32476E;" text="Cancelar" textFill="WHITE" />
+      <Label fx:id="lblHorario1" layoutX="120.0" layoutY="190.0" text="Fecha de inicio:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpFecha" layoutX="226.0" layoutY="187.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="115.0" layoutY="230.0" text="Dias:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkLunes" layoutX="162.0" layoutY="229.0" mnemonicParsing="false" text="Lunes" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkMartes" layoutX="232.0" layoutY="230.0" mnemonicParsing="false" text="Martes" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkMiercoles" layoutX="305.0" layoutY="231.0" mnemonicParsing="false" text="Miercoles" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkJueves" layoutX="397.0" layoutY="231.0" mnemonicParsing="false" text="Jueves" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkViernes" layoutX="475.0" layoutY="230.0" mnemonicParsing="false" text="Viernes" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>
